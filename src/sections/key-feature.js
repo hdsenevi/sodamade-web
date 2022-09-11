@@ -12,34 +12,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Mobile App Development',
+    title: 'Mobile App Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Mobile app development services for native and cross platform apps.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Web Development',
+    title: 'Web Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Customized web solutions to fit to your business needs.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Game Development',
+    title: 'Game Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Desktop and Mobile game development with and award winning team.',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Custom Bespoke Software',
+    title: 'Custom Bespoke Software',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We can create custom backend, frontend, mobile and APIs to fit your needs.',
   },
 ];
 
@@ -48,8 +48,8 @@ export default function KeyFeature() {
     <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Meet the feature of product"
+          slogan="Our services"
+          title="We provide custom solutions to all your digital needs"
         />
 
         <Grid sx={styles.grid}>

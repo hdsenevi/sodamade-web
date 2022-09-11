@@ -21,18 +21,18 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 005" />
+          <SEO title="Sodamade" />
           <Banner />
           <KeyFeature />
           <ServiceSection />
           <Feature />
           <CoreFeature />
-          <WorkFlow />
-          <Package />
-          <TeamSection />
-          <TestimonialCard />
-          <BlogSection />
-          <Subscribe />
+          {/*<WorkFlow />*/}
+          {/*<Package />*/}
+          {/*<TeamSection />*/}
+          {/*<TestimonialCard />*/}
+          {/*<BlogSection />*/}
+          {/*<Subscribe />*/}
         </Layout>
       </StickyProvider>
     </ThemeProvider>

@@ -23,23 +23,23 @@ import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Mobile App Development',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Native mobile apps',
+      title: 'Native mobile apps',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'We provide native iOS and Android mobile app development services with custom build solutions to fit your business needs.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Cross platform mobile apps',
+      title: 'Cross platform mobile apps',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Cross platform mobile app development services and solutions with cutting edge technology.',
     },
   ],
 };
@@ -56,15 +56,15 @@ export default function ServiceSection() {
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
-          <Button
-            sx={styles.videoBtn}
-            onClick={handleClick}
-            aria-label="Play Button"
-          >
-            <span>
-              <IoIosPlay />
-            </span>
-          </Button>
+          {/*<Button*/}
+          {/*  sx={styles.videoBtn}*/}
+          {/*  onClick={handleClick}*/}
+          {/*  aria-label="Play Button"*/}
+          {/*>*/}
+          {/*  <span>*/}
+          {/*    <IoIosPlay />*/}
+          {/*  </span>*/}
+          {/*</Button>*/}
 
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="Shape" />
