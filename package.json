@@ -2,12 +2,16 @@
   "name": "@landing/005-next",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "yarn": "1.22.19"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "serve": "next start",
     "export": "next export",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "clean-install": "rm -rf node_modules && yarn"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
