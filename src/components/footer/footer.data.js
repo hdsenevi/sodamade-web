@@ -7,26 +7,26 @@ export default {
     {
       id: 1,
       iconSrc: Chat,
-      altText: 'Community',
-      title: 'Join the Community',
+      altText: 'Contact us',
+      title: 'Contact us',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'Contact us about your digital software needs.',
     },
     {
       id: 2,
       iconSrc: Community,
       altText: 'Chat',
-      title: 'Chat Communication',
+      title: 'Here to help',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'Reach us on email, mobile or chat.',
     },
     {
       id: 3,
       iconSrc: Github,
-      altText: 'Github',
-      title: 'Github Access',
+      altText: 'Our portfolio',
+      title: 'Our portfolio',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'Have a look at our portfolio of work.',
     },
   ],
   menuItem: [
@@ -36,15 +36,7 @@ export default {
     },
     {
       path: '/',
-      label: 'Adversite',
-    },
-    {
-      path: '/',
-      label: 'Supports',
-    },
-    {
-      path: '/',
-      label: 'Marketing',
+      label: 'Our services',
     },
     {
       path: '/',

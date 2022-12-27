@@ -5,14 +5,6 @@ export default [
   },
   {
     path: 'feature',
-    label: 'Features',
-  },
-  {
-    path: 'pricing',
-    label: 'Pricing',
-  },
-  {
-    path: 'testimonial',
-    label: 'Testimonial',
+    label: 'Our services',
   },
 ];

@@ -34,9 +34,9 @@ export default function Header({ className }) {
           <Button
             className="donate__btn"
             variant="secondary"
-            aria-label="Get Started"
+            aria-label="Contact us"
           >
-            Get Started
+            Contact us
           </Button>
 
           <MobileDrawer />
