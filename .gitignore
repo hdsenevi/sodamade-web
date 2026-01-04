@@ -22,3 +22,5 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+# Snyk Security Extension - AI Rules (auto-generated)
+.cursor/rules/snyk_rules.mdc
