@@ -1,0 +1,219 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Sodamade — Digital Products and Services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: '/contact',
+      },
+    ]}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Sodamade Hero Image' }}
+  >
+    <Fragment slot="title">
+      Top Quality <span class="text-accent dark:text-white">Digital Products</span> and Services
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Your <span class="font-semibold text-accent dark:text-white">one stop shop</span> for all your custom digital products
+      and service needs. From native mobile application services to desktop and mobile game development.
+    </Fragment>
+  </Hero>
+
+  <!-- Features Widget *************** -->
+  <Features
+    id="services"
+    tagline="Our services"
+    title="We provide custom solutions to all your digital needs"
+    items={[
+      {
+        title: 'Mobile App Development',
+        description: 'Mobile app development services for native and cross platform apps.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Web Development',
+        description: 'Customized web solutions to fit to your business needs.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Game Development',
+        description: 'Desktop and Mobile game development with an award winning team.',
+        icon: 'tabler:device-gamepad',
+      },
+      {
+        title: 'Custom Bespoke Software',
+        description: 'We can create custom backend, frontend, mobile and APIs to fit your needs.',
+        icon: 'tabler:code',
+      },
+    ]}
+  />
+
+  <!-- Content Widget - Mobile App Development **************** -->
+
+  <Content
+    isReversed
+    tagline="our services"
+    title="Mobile App Development"
+    items={[
+      {
+        title: 'Native mobile apps',
+        description:
+          'We provide native iOS and Android mobile app development services with custom build solutions to fit your business needs.',
+      },
+      {
+        title: 'Cross platform mobile apps',
+        description: 'Cross platform mobile app development services and solutions with cutting edge technologies.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Mobile App Development',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Mobile App Development</h3>
+      Native and cross platform mobile app development services and solutions with cutting edge technologies.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget - Web Development **************** -->
+
+  <Content
+    tagline="Our services"
+    title="Web Development"
+    items={[
+      {
+        title: 'Customized web solutions',
+        description: `Customized web solutions to fit to your business needs. We provide comprehensive services from UI/UX design, development, deployment, hosting and domain registration services.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80',
+      alt: 'Web Development',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Web Development</h3>
+      Customized web solutions to fit to your business needs.
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget - Web Development **************** -->
+
+  <Content
+    isReversed
+    tagline="Our services"
+    title="Game Development"
+    items={[
+      {
+        title: 'Desktop and Mobile game development',
+        description: `Desktop and Mobile game development with an award winning team. We also provide game design and development services.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixid=M3wyMDg1NjR8MHwxfGFsbHx8fHx8fDJ8fDE2OTk1NDkxNzl8&ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+      alt: 'Black laptop computer beside a controller on a brown wooden surface',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Game Development</h3>
+      Desktop and Mobile game development with an award winning team.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="Amazing useful features"
+    tagline="Quality features"
+    items={[
+      {
+        title: 'Fast Performance',
+        description:
+          "Let's just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Pro Subscription',
+        description:
+          "We believe it's important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+        icon: 'tabler:star',
+      },
+      {
+        title: 'Partnership deal',
+        description:
+          "Let's just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.",
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Customer Support',
+        description:
+          "We believe it's important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.",
+        icon: 'tabler:headset',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact us',
+        href: '/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title"> Contact us </Fragment>
+
+    <Fragment slot="subtitle"> Contact us about your digital software needs. </Fragment>
+  </CallToAction>
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- <Features2
+    title="Here to help"
+    items={[
+      {
+        title: 'Reach us on email, mobile or chat',
+        description: "Have questions? Feel free to contact us. We're here to help!",
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Our portfolio',
+        description: 'Have a look at our portfolio of work.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+  /> -->
+</Layout>
